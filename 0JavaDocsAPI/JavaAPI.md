@@ -44,6 +44,26 @@
 1. 排序 : `Arrays.sort(array)`;
 2. 数组转化为列表 : `Arrays.asList()`
 
+### Interface Collection<E>
+
+
+1. All Known Subinterfaces:
+
+```java
+BeanContext, BeanContextServices, BlockingDeque<E>, BlockingQueue<E>, Deque<E>, List<E>, NavigableSet<E>, Queue<E>, Set<E>, SortedSet<E>, TransferQueue<E>
+```
+
+2. All Known Implementing Classes:
+```java
+AbstractCollection, AbstractList, AbstractQueue, AbstractSequentialList, AbstractSet, ArrayBlockingQueue, ArrayDeque, ArrayList, AttributeList, BeanContextServicesSupport, BeanContextSupport, ConcurrentHashMap.KeySetView, ConcurrentLinkedDeque, ConcurrentLinkedQueue, ConcurrentSkipListSet, CopyOnWriteArrayList, CopyOnWriteArraySet, DelayQueue, EnumSet, HashSet, JobStateReasons, LinkedBlockingDeque, LinkedBlockingQueue, LinkedHashSet, LinkedList, LinkedTransferQueue, PriorityBlockingQueue, PriorityQueue, RoleList, RoleUnresolvedList, Stack, SynchronousQueue, TreeSet, Vector 
+```
+
+3. 例子：Deque 转为 List，因为LinkedList有`LinkedList(Collection<? extends E> c)`的构造方法。
+
+```java
+List<> list = new LinkedList(Deque);
+```
+
 ### Deque
 
 1. Summary of Deque methods
