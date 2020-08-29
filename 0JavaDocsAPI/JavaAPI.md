@@ -17,12 +17,13 @@
 1. 字符串转字符数组：`s.toCharArray()`;
 2. 字符串长度： `s.length()`;
 3. 数组转字符串 : `String.valueOf(char[] data)`;
-4. 返回子字符串 : `s.substring(int beginIndex, int endIndex)`;左闭右开区间
+4. 返回子字符串 : `s.substring(int beginIndex, int endIndex)`，左闭右开区间;`substring(int beginIndex)`
 5. 字符串去除首尾空格 : `s.trim()`;
 6. 使用特定切割符来分割字符串成一个字符串数组 : `s.split(String regex)`;
 7. 使用特定切割符来分割字符串成一个字符串数组 : `s.split(String regex, int limit)`;
-8. 
-
+8. 判断字符串内容是否相同 : `equals(Object anObject)`;
+9. 判断字符串和`StringBuilder`与`StringBuffer`是否相同 : `contentEquals(CharSequence cs);contentEquals(StringBuffer sb)`;
+ 
 
 ### StringBuilder
 
