@@ -4,7 +4,7 @@
 
 ## java.lang
 
-### Integer
+### Class Integer
 
 1. 最大最小值 : `MAX_VALUE, MIN_VALUE`;
 2. 十进制字符串转化为 int 整数 : `Integer.parseInt(String s)`;
@@ -12,7 +12,7 @@
 4. 十进制字符串转化为 Integer 整数 : `Integer.valueOf(String s)`;
 5. 不同进制字符串转化为 Integer 整数 : `Integer.valueOf(String s, int radix)`;
 
-### String
+### Class String
 
 1. 字符串转字符数组：`s.toCharArray()`;
 2. 字符串长度： `s.length()`;
@@ -25,7 +25,7 @@
 9. 判断字符串和`StringBuilder`与`StringBuffer`是否相同 : `contentEquals(CharSequence cs);contentEquals(StringBuffer sb)`;
  
 
-### StringBuilder
+### Class StringBuilder
 
 1. java.lang.StringBuilder
 2. Constructor : `StringBuilder(); StringBuilder(String str)`;
@@ -39,7 +39,7 @@
 
 ## java.util.
 
-### Arrays
+### Class Arrays
 
 1. 排序 : `Arrays.sort(array)`;
 2. 数组转化为列表 : `Arrays.asList()`
@@ -64,7 +64,7 @@ AbstractCollection, AbstractList, AbstractQueue, AbstractSequentialList, Abstrac
 List<> list = new LinkedList(Deque);
 ```
 
-### Deque
+### Interface Deque
 
 1. Summary of Deque methods
 
@@ -100,7 +100,7 @@ Stack 队首进元素，对首出元素。
 
 4. 返回大小 : `dq.size()`;
 
-### List
+### Interface List
 
 1. LinkedList实现的构造函数 : `LinkedList();LinkedList(Collection<? extends E> c)`;
 2. 队尾添加元素 : `list.add(element)`;
@@ -110,17 +110,23 @@ Stack 队首进元素，对首出元素。
 6. 列表是否为空 : `list.isEmpty()`;
 7. 列表是否包含相应元素 : `list.contains(Object o)`;
 
-### Map
+### Interface Map
 
 1. 得到键值，不存在就给默认值 : `map.getOrDefault(key, defaultValue)`;
 2. 得到键值 : `map.get(key)`;
 3. 是否包含key : `map.containsKey(Object key)`;
 4. 返回map的值的集合 : `map.values()`; 可以用 LinkedList 的构造函数来转化为列表
-5. 
 
-### Regex.Pattern
+### Regex.Class Pattern
 
-Java
+### Class Stack
+
+不推荐 Stack 类来声明栈。因为 Stack 继承 Vector，Vector 是一个动态数组，可以在任意位置添加或者删除元素。因此 Stack 也有这个能力，这就破坏了封装成一个 Stack 的意义。一般用 Deque 来声明一个栈。
+
+```java
+Deque<Integer> stack = new ArrayDeque<Integer>();
+```
+
 ---
 ---
 ```
