@@ -106,7 +106,7 @@ Stack 队首进元素，对首出元素。
 2. 队尾添加元素 : `list.add(element)`;
 3. 获取下标元素 : `list.get(int index)`;
 4. 列表元素个数 : `list.size()`;
-5. 列表转数组 : `list.toArray()`;
+5. 列表转数组 : `list.toArray()`;//转化为int的比较繁琐
 6. 列表是否为空 : `list.isEmpty()`;
 7. 列表是否包含相应元素 : `list.contains(Object o)`;
 
